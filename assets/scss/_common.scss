@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  font-family: $font-main;
+  font-size: $font-size;
+  color: $color-gray;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  font-family: $font-header;
+  font-weight: 300;
+  line-height: 1.2em;
+  letter-spacing: 0.08em;
+}
+
+h2 {
+  color: $color-primary;
+  font-family: $font-header;
+  line-height: 1.2em;
+}
+
+h3 {
+}
+
+p {
+}
+
+a {
+  color: $color-light;
+  text-decoration: none;
+}
+
+input:focus {
+}
+
+.btn {
+  display: block;
+  width: 250px;
+  border: 2px solid $color-light;
+  background-color: rgba($color-light, 0.1);
+  padding: 18px $gap;
+  text-align: center;
+  font-size: 1.125rem;
+  transition: background-color 0.5s;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
+}

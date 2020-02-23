@@ -1,0 +1,118 @@
+.skills {
+  padding: ($gap / 2) ($gap / 2) ($gap * 2);
+
+  &__container {
+    display: grid;
+
+    grid-gap: $gap / 2;
+
+    @include lg-min {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+        "a1 a1 a2 a3"
+        "a4 a5 a5 a6"
+        "a7 a8 a9 a6";
+    }
+
+    @include lg-md {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "a1 a1 a2"
+        "a3 a4 a4"
+        "a5 a5 a6"
+        "a7 a8 a6"
+        "a7 a9 a9";
+    }
+
+    @include md {
+      // TODO:
+    }
+  }
+}
+
+.skill-item {
+  min-height: calc(33vh - 12px);
+  background-color: $color-primary;
+  position: relative;
+  overflow: hidden;
+
+  &__overlay {
+    background-color: $color-primary;
+    opacity: 0.8;
+    z-index: 1;
+    transition: 0.5s;
+
+    @include abs-position;
+  }
+
+  &__image {
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: 0.5s;
+
+    @include abs-position;
+  }
+  &__title {
+    z-index: 2;
+    margin: 0;
+
+    @include abs-position;
+  }
+  &__link {
+    padding: $gap;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+
+  &:hover {
+    .skill-item__overlay {
+      opacity: 0.95 !important;
+    }
+    .skill-item__image {
+      transform: scale(1.1);
+    }
+    .skill-item__link {
+      color: $color-accent;
+    }
+  }
+
+  &:nth-of-type(1) {
+    grid-area: a1;
+  }
+
+  &:nth-of-type(2) {
+    grid-area: a2;
+  }
+
+  &:nth-of-type(3) {
+    grid-area: a3;
+  }
+
+  &:nth-of-type(4) {
+    grid-area: a4;
+  }
+
+  &:nth-of-type(5) {
+    grid-area: a5;
+  }
+
+  &:nth-of-type(6) {
+    grid-area: a6;
+  }
+
+  &:nth-of-type(7) {
+    grid-area: a7;
+  }
+
+  &:nth-of-type(8) {
+    grid-area: a8;
+  }
+
+  &:nth-of-type(9) {
+    grid-area: a9;
+  }
+}
