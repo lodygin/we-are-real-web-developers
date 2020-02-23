@@ -9,13 +9,13 @@ const mqpacker = require('css-mqpacker');
 const sortCSSmq = require('sort-css-media-queries');
 
 const path = {
-  scssFolder: './scss/',
-  scssFiles: './scss/**/*.scss',
-  scssFile: './scss/style.scss',
-  cssFolder: './css/',
-  cssFile: './css/style.css',
+  scssFolder: './assets/scss/',
+  scssFiles: './assets/scss/**/*.scss',
+  scssFile: './assets/scss/style.scss',
+  cssFolder: './assets/css/',
+  cssFile: './assets/css/style.css',
   htmlFiles: './*.html',
-  jsFiles: './js/**/*.js'
+  jsFiles: './assets/js/**/*.js'
 };
 
 const plugins = [
