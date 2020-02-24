@@ -1,6 +1,10 @@
 .skills {
   padding: ($gap / 2) ($gap / 2) ($gap * 2);
 
+  @include sm {
+    padding: $gap $gap ($gap * 2);
+  }
+
   &__container {
     display: grid;
 
@@ -24,8 +28,31 @@
         "a7 a9 a9";
     }
 
-    @include md {
-      // TODO:
+    @include md-sm {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "a1 a2"
+        "a3 a2"
+        "a4 a4"
+        "a5 a6"
+        "a5 a7"
+        "a8 a9";
+    }
+
+    @include sm {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "a1"
+        "a2"
+        "a3"
+        "a4"
+        "a5"
+        "a6"
+        "a7"
+        "a8"
+        "a9";
+
+        grid-gap: $gap;
     }
   }
 }
@@ -66,6 +93,11 @@
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+    font-size: 1.25rem;
+
+    @include md {
+      font-size:  1.125rem;
+    }
   }
 
   &:hover {
@@ -114,5 +146,35 @@
 
   &:nth-of-type(9) {
     grid-area: a9;
+  }
+}
+
+.skills__button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: $gap;
+
+  @include sm {
+    padding: $gap 0 0 0;
+  }
+
+  .btn-accent {
+    padding: 18px;
+    display: block;
+    width: 350px;
+    font-size: 1.125rem;
+    letter-spacing: 1.8px;
+    background-color: rgba($color-primary, 0.8);
+    border: 2px solid $color-primary;
+    transition: background-color 0.5s;
+
+    &:hover {
+      background-color: $color-accent;
+    }
+
+    @include sm {
+      width: 100%;
+    }
   }
 }
