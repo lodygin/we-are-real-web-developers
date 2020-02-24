@@ -39,10 +39,8 @@ input:focus {
 
 .btn {
   display: block;
-  width: 250px;
   border: 2px solid $color-light;
   background-color: rgba($color-light, 0.1);
-  padding: 18px $gap;
   text-align: center;
   font-size: 1.125rem;
   transition: background-color 0.5s;

@@ -18,9 +18,16 @@
       margin: 0 0 43px;
     }
 
+    @include md-sm {
+      margin: 0 0 32px;
+    }
+
     @include md {
       font-size: 1.875rem;
-      margin: 0 0 43px;
+    }
+
+    @include sm {
+      margin: 0 0 38px;
     }
   }
 
@@ -29,8 +36,22 @@
     justify-content: center;
 
     .btn {
-      margin-left: $gap / 2;
-      margin-right: $gap / 2;
+      margin-left: ($gap / 2);
+      margin-right: ($gap / 2);
+      padding: 18px 20px;
+      width: 250px;
+
+      @include lg-md {
+        letter-spacing: 0.05em;
+        padding: 14px 20px;
+        width: 200px;
+      }
+
+      @include md {
+        letter-spacing: 0.03em;
+        padding: 9px 20px;
+        width: 170px;
+      }
     }
   }
 }

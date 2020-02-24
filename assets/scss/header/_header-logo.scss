@@ -4,7 +4,7 @@
 
   &__link {
     display: block;
-    padding: $gap $gap $gap 0;
+    padding: $gap $gap ($gap / 2) 0;
   }
 
   &__accent {
