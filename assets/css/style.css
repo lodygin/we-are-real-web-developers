@@ -463,7 +463,7 @@ template {
 /* sm */
 /* xs */
 /* xx */
-.header-menu__container, .header-content__container {
+.header-menu__container, .header-content__container, .about__container {
   max-width: 1340px;
   margin: 0 auto;
   padding-left: 20px;
@@ -687,7 +687,7 @@ a {
 }
 
 .skills {
-  padding: 10px 10px 40px;
+  padding: 10px 10px 20px;
 }
 
 .skills__container {
@@ -820,7 +820,7 @@ a {
 }
 
 .skills__button .btn-accent {
-  padding: 18px;
+  padding: 20px;
   display: block;
   width: 350px;
   font-size: 1.125rem;
@@ -834,6 +834,56 @@ a {
 
 .skills__button .btn-accent:hover {
   background-color: #d66926;
+}
+
+.about {
+  background-color: #e5e5e5;
+  padding: 0 0 67px;
+}
+
+.about__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.about__column-content {
+  padding: 100px 0 0;
+}
+
+.about__title {
+  max-width: 360px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 48px;
+  margin: 0 0 47px;
+}
+
+.about__text {
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  line-height: 24px;
+  padding: 0 50px 0 0;
+  position: relative;
+  opacity: 0.8;
+}
+
+.about__text::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  right: 0;
+  top: 0;
+  height: 200px;
+  background-color: rgba(68, 89, 110, 0.27);
+}
+
+.about__column-image {
+  padding: 100px 0 0 40px;
 }
 
 @media (min-width: 768px) {
@@ -856,6 +906,12 @@ a {
   }
 }
 
+@media (max-width: 991.8px) {
+  .about__text p:nth-child(4) {
+    display: none;
+  }
+}
+
 @media (max-width: 991.8px) and (min-width: 768px) {
   .header-content__title {
     font-size: 2.5rem;
@@ -869,6 +925,22 @@ a {
   .skills__container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
+  }
+  .about {
+    padding: 0 0 29px;
+  }
+  .about__column-content {
+    padding: 80px 0 0;
+  }
+  .about__title {
+    font-size: 32px;
+    max-width: 300px;
+    letter-spacing: 3.2px;
+    line-height: 40px;
+    margin: 0 0 34px;
+  }
+  .about__column-image {
+    padding: 50px 0 0 25px;
   }
 }
 
@@ -900,6 +972,10 @@ a {
   .skill-item__link {
     font-size: 1.125rem;
   }
+  .about__text {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
 }
 
 @media (max-width: 767.8px) and (min-width: 576px) {
@@ -910,6 +986,31 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
   }
+  .about {
+    padding: 0 0 18px;
+  }
+  .about__column-content {
+    padding: 60px 0 0;
+  }
+  .about__title {
+    font-size: 24px;
+    max-width: 220px;
+    letter-spacing: 2.4px;
+    line-height: 32px;
+    margin: 0 0 25px;
+  }
+  .about__text p:nth-child(3) {
+    display: none;
+  }
+  .about__text {
+    padding: 0 18px 0 0;
+  }
+  .about__column-image {
+    padding: 36px 0 0 55px;
+  }
+  .about__image {
+    max-width: 236px;
+  }
 }
 
 @media (max-width: 575.8px) {
@@ -917,7 +1018,7 @@ a {
     margin: 0 0 38px;
   }
   .skills {
-    padding: 20px 20px 40px;
+    padding: 20px;
   }
   .skills__container {
     grid-template-columns: 1fr;
@@ -929,5 +1030,33 @@ a {
   }
   .skills__button .btn-accent {
     width: 100%;
+  }
+  .about {
+    padding: 0 0 68px;
+  }
+  .about__row {
+    display: block;
+  }
+  .about__column-content {
+    padding: 57px 0 0;
+  }
+  .about__title {
+    text-align: center;
+    margin: 0 auto 21px;
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    line-height: 32px;
+    max-width: 220px;
+  }
+  .about__text::after {
+    display: none;
+  }
+  .about__text {
+    padding: 0;
+    margin: 0 0 40px;
+  }
+  .about__column-image {
+    padding: 0;
+    text-align: center;
   }
 }

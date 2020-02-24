@@ -1,0 +1,143 @@
+.about {
+  background-color: $color-gray-light;
+  padding: 0 0 67px;
+
+  @include lg-md {
+    padding: 0 0 29px;
+  }
+
+  @include md-sm {
+    padding: 0 0 18px;
+  }
+
+  @include sm {
+    padding: 0 0 68px;
+  }
+
+  &__container {
+    @extend %container;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    @include sm {
+      display: block;
+    }
+  }
+  &__column {}
+  &__column-content {
+    padding: 100px 0 0;
+    
+    @include lg-md {
+      padding: 80px 0 0;
+    }
+
+    @include md-sm {
+      padding: 60px 0 0;
+    }
+
+    @include sm {
+      padding: 57px 0 0;
+    }
+  }
+  &__title {
+    max-width: 360px;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 48px;
+    margin: 0 0 47px;
+
+    @include lg-md {
+      font-size: 32px;
+      max-width: 300px;
+      letter-spacing: 3.2px;
+      line-height: 40px;
+      margin: 0 0 34px;
+    }
+
+    @include md-sm {
+      font-size: 24px;
+      max-width: 220px;
+      letter-spacing: 2.4px;
+      line-height: 32px;
+      margin: 0 0 25px;
+    }
+
+    @include sm {
+      text-align: center;
+      margin: 0 auto 21px;
+      font-size: 24px;
+      letter-spacing: 2.4px;
+      line-height: 32px;
+      max-width: 220px;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    line-height: 24px;
+    padding: 0 50px 0 0;
+    position: relative;
+    opacity: 0.8;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      right: 0;
+      top: 0;
+      height: 200px;
+      background-color: rgba($color-gray-dark, 0.27);
+
+      @include sm {
+        display: none;
+      }
+    }
+    & p:nth-child(3) {
+      
+      @include md-sm {
+        display: none;
+      }
+    }
+    & p:nth-child(4) {
+
+      @include lg {
+        display: none;
+      }
+    }
+    @include md {
+      font-size: 16px;
+      letter-spacing: 0.8px;
+    }
+    @include md-sm {
+      padding: 0 18px 0 0;
+    }
+
+    @include sm {
+      padding: 0;
+      margin: 0 0 40px;
+    }
+  }
+  &__column-image {
+    padding: 100px 0 0 40px;
+
+    @include lg-md {
+      padding: 50px 0 0 25px;
+    }
+
+    @include md-sm {
+      padding: 36px 0 0 55px;
+    }
+
+    @include sm {
+      padding: 0;
+      text-align: center;
+    }
+  }
+  &__image {
+    @include md-sm {
+      max-width: 236px;
+    }
+  }
+}
