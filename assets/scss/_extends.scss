@@ -4,3 +4,12 @@
   padding-left: $gap;
   padding-right: $gap;
 }
+
+%input-skin {
+  background-color: rgba($color-light, 0.05);
+  border-color: rgba($color-light, 0) rgba($color-light, 0) rgba($color-light, 0.1) rgba($color-light, 0);
+  &:focus {
+    border-color: rgba($color-light, 0.1) rgba($color-light, 0.1) $color-light rgba($color-light, 0.1);
+    background-color: rgba($color-light, 0.15);
+  }
+}

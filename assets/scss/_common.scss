@@ -34,6 +34,7 @@ a {
 }
 
 input:focus {
+  outline: none;
 }
 
 .btn {
@@ -47,5 +48,23 @@ input:focus {
   &:hover,
   &:focus {
     background-color: $color-accent;
+  }
+}
+
+.item-form {
+  width: 100%;
+  padding: 17px 33px;
+  border-width: 2px;
+  color: $color-light;
+  font-size: 18px;
+  letter-spacing: 1.8px;
+
+  @include lg {
+    padding: 17px 21px;
+  }
+
+  @include lg-md {
+    font-size: 16px;
+    letter-spacing: 1.6px;
   }
 }
