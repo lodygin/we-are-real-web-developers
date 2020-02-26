@@ -1,6 +1,6 @@
 .footer {
   background-color: $color-primary;
-  padding: 50px 0 80px;
+  padding: 50px 0 ($gap * 4);
   position: relative;
     &::after {
     content: '';
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    margin: 0 0 60px;
+    margin: 0 0 ($gap * 3);
     &::after {
       content: '';
       position: absolute;

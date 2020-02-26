@@ -27,14 +27,14 @@
   }
   &__column {}
   &__column-content {
-    padding: 100px 0 0;
+    padding: ($gap * 5) 0 0;
     
     @include lg-md {
-      padding: 80px 0 0;
+      padding: ($gap * 4) 0 0;
     }
 
     @include md-sm {
-      padding: 60px 0 0;
+      padding: ($gap * 3) 0 0;
     }
 
     @include sm {
@@ -43,14 +43,14 @@
   }
   &__title {
     max-width: 360px;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 4px;
     line-height: 48px;
     margin: 0 0 47px;
 
     @include lg-md {
-      font-size: 32px;
+      font-size: 2rem;
       max-width: 300px;
       letter-spacing: 3.2px;
       line-height: 40px;
@@ -58,7 +58,7 @@
     }
 
     @include md-sm {
-      font-size: 24px;
+      font-size: 1.5rem;
       max-width: 220px;
       letter-spacing: 2.4px;
       line-height: 32px;
@@ -68,14 +68,14 @@
     @include sm {
       text-align: center;
       margin: 0 auto 21px;
-      font-size: 24px;
+      font-size: 1.5rem;
       letter-spacing: 2.4px;
       line-height: 32px;
       max-width: 220px;
     }
   }
   &__text {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.9px;
     line-height: 24px;
     padding: 0 50px 0 0;
@@ -110,7 +110,7 @@
       }
     }
     @include md {
-      font-size: 16px;
+      font-size: 1rem;
       letter-spacing: 0.8px;
     }
     @include md-sm {
@@ -119,11 +119,11 @@
 
     @include sm {
       padding: 0;
-      margin: 0 0 40px;
+      margin: 0 0 ($gap * 2);
     }
   }
   &__column-image {
-    padding: 100px 0 0 40px;
+    padding: ($gap * 5) 0 0 ($gap * 2);
 
     @include lg-md {
       padding: 50px 0 0 25px;

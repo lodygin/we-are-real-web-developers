@@ -889,7 +889,7 @@ input:focus {
 
 .about__title {
   max-width: 360px;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 4px;
   line-height: 48px;
@@ -897,7 +897,7 @@ input:focus {
 }
 
 .about__text {
-  font-size: 18px;
+  font-size: 1.125rem;
   letter-spacing: 0.9px;
   line-height: 24px;
   padding: 0 50px 0 0;
@@ -1069,7 +1069,7 @@ input:focus {
 
 .posts__item-title {
   font-family: "Roboto Slab", serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: 0.9px;
   line-height: 20px;
@@ -1219,7 +1219,7 @@ input:focus {
     padding: 80px 0 0;
   }
   .about__title {
-    font-size: 32px;
+    font-size: 2rem;
     max-width: 300px;
     letter-spacing: 3.2px;
     line-height: 40px;
@@ -1271,7 +1271,7 @@ input:focus {
     font-size: 1.125rem;
   }
   .about__text {
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 0.8px;
   }
   .form__form {
@@ -1303,7 +1303,7 @@ input:focus {
     padding: 60px 0 0;
   }
   .about__title {
-    font-size: 24px;
+    font-size: 1.5rem;
     max-width: 220px;
     letter-spacing: 2.4px;
     line-height: 32px;
@@ -1368,7 +1368,7 @@ input:focus {
   .about__title {
     text-align: center;
     margin: 0 auto 21px;
-    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 2.4px;
     line-height: 32px;
     max-width: 220px;
