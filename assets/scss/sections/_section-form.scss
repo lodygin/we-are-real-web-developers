@@ -50,7 +50,7 @@
     width: 100%;
     background-color: rgba($color-light, 0.1);
     border-width: 2px;
-    border-color: rgba($color-light, 0) rgba($color-light, 0) rgba($color-light, 0.25) rgba($color-light, 0);
+    border-color: rgba($color-light, 0) rgba($color-light, 0) rgba($color-light, 0.25);
     transition-duration: 0.5s;
     transition-property: background-color, border-color;
     &:hover {
