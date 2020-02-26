@@ -29,11 +29,20 @@
     @include sm {
       margin: 0 0 38px;
     }
+
+    @media (max-width: 440px) {
+      font-size: 1.6rem;
+      margin: 0 0 58px;
+    }
   }
 
   &__buttons {
     display: flex;
     justify-content: center;
+
+    @media (max-width: 440px) {
+      display: block;
+    }
 
     .btn {
       margin-left: ($gap / 2);
@@ -51,6 +60,13 @@
         letter-spacing: 0.03em;
         padding: 9px 20px;
         width: 170px;
+      }
+
+      @media (max-width: 440px) {
+        margin: 0 auto ($gap);
+        &:last-child {
+          margin: 0 auto;
+        }
       }
     }
   }
