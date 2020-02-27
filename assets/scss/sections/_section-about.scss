@@ -80,7 +80,7 @@
     line-height: 24px;
     padding: 0 50px 0 0;
     position: relative;
-    opacity: 0.8;
+    color: $color-gray;
     p {
       margin: 18px 0;
     }
@@ -91,7 +91,7 @@
       right: 0;
       top: 0;
       height: 200px;
-      background-color: rgba($color-gray-dark, 0.27);
+      background-color: rgba($color-gray, 0.24);
 
       @include sm {
         display: none;
@@ -109,12 +109,15 @@
         display: none;
       }
     }
+    @include lg-md {
+      padding: 0 24px 0 0;
+    }
     @include md {
       font-size: 1rem;
       letter-spacing: 0.8px;
     }
     @include md-sm {
-      padding: 0 18px 0 0;
+      padding: 0 21px 0 0;
     }
 
     @include sm {

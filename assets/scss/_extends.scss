@@ -13,5 +13,12 @@
   &:focus {
     border-color: rgba($color-light, 0.1) rgba($color-light, 0.1) $color-light;
     background-color: rgba($color-light, 0.15);
+    &::placeholder {
+      color: $color-light;
+    }
+  }
+  &::placeholder {
+    transition: color 0.5s;
+    color: $color-gray;
   }
 }

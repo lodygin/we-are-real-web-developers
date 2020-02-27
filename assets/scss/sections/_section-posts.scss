@@ -98,6 +98,9 @@
     &:hover {
       color: $color-primary;
       background-color: ($color-gray-light - #222222);
+      .posts__image {
+        transform: scale(1.1);
+      }
     }
   }
   &__link {
@@ -110,12 +113,14 @@
   }
   &__block-image {
     flex: 0 0 300px;
+    overflow: hidden;
   }
   &__image {
     height: 300px;
     width: 100%;
     object-fit: cover;
     object-position: center;
+    transition: transform 0.5s;
   }
   &__content {
     padding: ($gap / 2) $gap;
